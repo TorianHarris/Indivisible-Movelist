@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Dhar",
+        "role": "Heavy-Damage, Tank",
+        "upAtk": "Juggles, buffed by rocks",
+        "neutralAtk": "Hits multiple times, buffed by rocks",
+        "downAtk": "Stores 1 rock. Rock enhances next attack and is consumed.",
+        "special1": "AoE"
+    },
+    {
+        "name": "Phoebe",
+        "role": "Heavy-Damage, Tank",
+        "upAtk": "AoE Juggle.",
+        "neutralAtk": "Ranged arrow",
+        "downAtk": "Aerial grab. Only hits airborne targets."
+    }
+]

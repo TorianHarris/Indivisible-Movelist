@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button'
 
 const style = {
   footer: {
-    position: 'absolute',
+    position: 'fixed',
     bottom: 0,
     width: '100%',
     //height: 25,

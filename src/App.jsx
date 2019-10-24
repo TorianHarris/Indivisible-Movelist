@@ -14,6 +14,7 @@ const style = {
     textAlign: 'center'
   },
   characterContainer: {
+    paddingBottom: 40, 
     textAlign: 'center'
   }
 }

@@ -1,5 +1,14 @@
 [
     {
+        "name": "Ajna"
+    },
+    {
+        "name": "Antoine"
+    },
+    {
+        "name": "Baozhai"
+    },
+    {
         "name": "Dhar",
         "role": "Heavy-Damage, Tank",
         "upAtk": "Juggles, buffed by rocks",
@@ -8,10 +17,64 @@
         "special1": "AoE"
     },
     {
+        "name": "Ginseng"
+    },
+    {
+        "name": "Hunoch"
+    },
+    {
+        "name": "Kampan"
+    },
+    {
+        "name": "Kushi"
+    },
+    {
+        "name": "Lanshi"
+    },
+    {
+        "name": "Latigo"
+    },
+    {
+        "name": "Leilani"
+    },
+    {
+        "name": "Naga Rider"
+    },
+    {
+        "name": "Nuna"
+    },
+    {
         "name": "Phoebe",
         "role": "Heavy-Damage, Tank",
         "upAtk": "AoE Juggle.",
         "neutralAtk": "Ranged arrow",
         "downAtk": "Aerial grab. Only hits airborne targets."
+    },
+    {
+        "name": "Qadira"
+    },
+    {
+        "name": "Razmi"
+    },
+    {
+        "name": "Ren"
+    },
+    {
+        "name": "Sangmu"
+    },
+    {
+        "name": "Thorani"
+    },
+    {
+        "name": "Tungar"
+    },
+    {
+        "name": "Yan"
+    },
+    {
+        "name": "Zahra"
+    },
+    {
+        "name": "Zebei"
     }
 ]

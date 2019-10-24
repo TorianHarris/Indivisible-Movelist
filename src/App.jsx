@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import data from './data.json';
-//import './images';
 
 import Container from '@material-ui/core/Container';
 import CharacterButton from './components/CharacterButton';
@@ -11,6 +10,11 @@ const style = {
   header: {
     color: 'white',
     margin: 0,
+    padding: 20,
+    textAlign: 'center'
+  },
+  characterContainer: {
+    textAlign: 'center'
   }
 }
 
@@ -20,7 +24,7 @@ export default class App extends Component {
 
     this.state = {
       data: data,
-      currentCharacter: null,
+      currentCharacter: {},
       setOpen: false,
       testText: 'nothing'
     }
@@ -42,10 +46,12 @@ export default class App extends Component {
       <>
         <Container>
           <h1 style={style.header}>Indivisible Move List</h1>
-          <CharacterModal setOpen={this.state.setOpen} handleClose={this.handleModalClose} />
+          <CharacterModal data={this.state.currentCharacter} setOpen={this.state.setOpen} handleClose={this.handleModalClose} />
+          <div style={style.characterContainer}>
           {data.map((d, index) => {
             return <CharacterButton img={require(`./images/${d.name}.png`)} data={d} id={index} key={index} openModal={this.handleModalOpen} />
           })}
+          </div>
         </Container>
         <Footer />
       </>

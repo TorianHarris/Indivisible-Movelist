@@ -26,7 +26,8 @@ const style = {
   },
 };
 
-export default function CharacterModal({ setOpen, handleClose }) {
+export default function CharacterModal({ data, setOpen, handleClose }) {
+  //const { name, upAtk } = data;
   return (
     <div>
       <Modal
@@ -45,9 +46,9 @@ export default function CharacterModal({ setOpen, handleClose }) {
           <div style={style.container}>
           <button> {"<"} </button>
           <div style={style.paper}>
-            <h2 id="simple-modal-title">Text in a modal</h2>
+            <h2 id="simple-modal-title">{data.name ? data.name : "no name"}</h2>
             <p id="simple-modal-description">
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+              {data.upAtk ? data.upAtk : "UpAtk coming soon tm"}
           </p>
           </div>
           <button> {">"} </button>

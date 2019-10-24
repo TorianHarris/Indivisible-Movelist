@@ -1,8 +1,8 @@
 import React from 'react';
 
 const style = {
-  width: 131,
-  height: 150,
+  width: 118,
+  height: 135,
   //border: '3px solid black',
   //borderRadius: '16px',
   margin: 7,

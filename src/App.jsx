@@ -25,7 +25,7 @@ export default class App extends Component {
 
     this.state = {
       data: data,
-      currentCharacter: {},
+      index: 0,
       setOpen: false,
       testText: 'nothing'
     }
@@ -34,11 +34,18 @@ export default class App extends Component {
       // this.setState({testText: 'someting c:'},
       // () => alert(this.state.testText))
       //alert(id);
-      this.setState({ setOpen: true, currentCharacter: this.state.data[id] })
+      this.setState({ setOpen: true, index: id })
     }
 
     this.handleModalClose = () => {
       this.setState({ setOpen: false })
+    }
+
+    this.handleArrowButton = direction => {
+      if (direction === 'right' && this.state.index < this.state.data.length-1)
+        this.setState({ index: this.state.index + 1 })
+      else if (direction === 'left' && this.state.index > 0)
+        this.setState({ index: this.state.index - 1 })
     }
   }
 
@@ -47,7 +54,7 @@ export default class App extends Component {
       <>
         <Container>
           <h1 style={style.header}>Indivisible Move List</h1>
-          <CharacterModal data={this.state.currentCharacter} setOpen={this.state.setOpen} handleClose={this.handleModalClose} />
+          <CharacterModal data={this.state.data[this.state.index]} setOpen={this.state.setOpen} handleClose={this.handleModalClose} handleArrow={this.handleArrowButton}/>
           <div style={style.characterContainer}>
           {data.map((d, index) => {
             return <CharacterButton img={require(`./images/${d.name}.png`)} data={d} id={index} key={index} openModal={this.handleModalOpen} />

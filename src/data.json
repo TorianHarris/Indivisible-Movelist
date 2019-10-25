@@ -11,6 +11,10 @@
     {
         "name": "Dhar",
         "role": "Heavy-Damage, Tank",
+        "gimmick": {
+            "title": "Earthen Rocks",
+            "desc": "Rocks are consumed by Up Atk and Neutral Atk. Enhances Up Atk and Neutral Atk. Can store a max of 12."
+        },
         "upAtk": "Juggles, buffed by rocks.",
         "neutralAtk": "Hits multiple times, buffed by rocks",
         "downAtk": "Stores 1 rock. Rock enhances next attack and is consumed.",
@@ -63,7 +67,15 @@
         "name": "Sangmu"
     },
     {
-        "name": "Thorani"
+        "name": "Thorani",
+        "role": "Healer",
+        "gimmick": {
+            "title": "Puddles",
+            "desc": "Allies recover health when moving over activated puddles. Enemies take damage when moving over activated puddles."
+        },
+        "upAtk": "Activates puddles.",
+        "neutralAtk": "Shoots water blast. Magical. Ranged.",
+        "downAtk": "Runs up and deals close ranged attack."
     },
     {
         "name": "Tungar"

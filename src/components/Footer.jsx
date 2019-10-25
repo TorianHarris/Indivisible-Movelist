@@ -24,7 +24,7 @@ const style = {
 export default function Footer() {
   return (
     <div style={style.footer}>
-      <Button style={style.text}>Donate</Button>
+      <Button style={style.text} href="https://ko-fi.com/shauncodes" target="_blank">Donate</Button>
       |
       <Button style={style.text}>FAQ</Button>
     </div>
